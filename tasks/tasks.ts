@@ -1,5 +1,5 @@
 import { task, types } from "hardhat/config";
-import { HardhatRuntimeEnvironment } from "hardhat/types";
+import type { HardhatRuntimeEnvironment } from "hardhat/types";
 
 import { DEPLOY_LOCK } from "./task-names";
 import { preAction } from "./utils";
