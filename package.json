@@ -24,6 +24,7 @@
     "@commitlint/config-conventional": "^17.1.0",
     "@nomicfoundation/hardhat-chai-matchers": "^1.0.3",
     "@nomicfoundation/hardhat-toolbox": "^2.0.0",
+    "colors": "^1.4.0",
     "hardhat": "^2.11.2",
     "hardhat-contract-sizer": "^2.6.1",
     "hardhat-gas-reporter": "^1.0.9",

@@ -1,13 +1,17 @@
+import colors from "colors";
+
 import type { LogType } from "./types";
 
-const prettyDeploy = (contractName: string, conrtactAddress: string) => {
+const prettyDeploy = (contractName: string, contractAddress: string) => {
   console.log(
-    `🌐 \x1b[34m${contractName}\x1b[0m deployed. Address: \x1b[36m${conrtactAddress}\x1b[0m`
+    colors.bold(colors.green(`🌐 ${contractName} successfully deployed.`))
   );
+
+  console.log(colors.bold(colors.yellow("Address:")), contractAddress);
 };
 
 const prettyPreDeploy = (contractName: string) => {
-  console.log(`⌛ Deploying \x1b[34m${contractName}...`);
+  console.log("⌛ Deploying", colors.bold(colors.green(contractName)) + "...");
 };
 
 export const log: LogType = {
