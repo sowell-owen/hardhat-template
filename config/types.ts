@@ -4,6 +4,7 @@ export type EnvVars = {
   OPTIMIZER: boolean;
   REPORT_GAS: boolean;
   PRIVATE_KEY: string;
+  ETHERSCAN_KEY?: string;
 };
 
 export type Networks = "goerli" | "main";

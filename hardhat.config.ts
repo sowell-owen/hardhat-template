@@ -10,7 +10,7 @@ import { getNetworkConfig } from "./config/getNetworkConfig";
 import "hardhat-gas-reporter";
 import "hardhat-contract-sizer";
 
-const { OPTIMIZER, REPORT_GAS } = getEnvVars();
+const { OPTIMIZER, REPORT_GAS, ETHERSCAN_KEY } = getEnvVars();
 
 const config: HardhatUserConfig = {
   solidity: {
@@ -35,6 +35,9 @@ const config: HardhatUserConfig = {
   },
   gasReporter: {
     enabled: REPORT_GAS,
+  },
+  etherscan: {
+    apiKey: ETHERSCAN_KEY,
   },
 };
 
