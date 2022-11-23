@@ -1,1 +1,3 @@
-export const DEPLOY_LOCK = "deploy-lock";
+export enum TaskNames {
+  DEPLOY_LOCK = "deploy-lock",
+}
