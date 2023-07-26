@@ -1,6 +1,6 @@
 import type { HardhatRuntimeEnvironment } from "hardhat/types";
 
-export const setBalanceHre = async (
+export const setBalance = async (
   hre: HardhatRuntimeEnvironment,
   address: string,
   hexBalance: string

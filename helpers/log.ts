@@ -1,6 +1,9 @@
 import colors from "colors";
 
-import type { LogType } from "./types";
+type LogType = {
+  deploy: (contractName: string, contractAddress: string) => void;
+  preDeploy: (contractName: string) => void;
+};
 
 const prettyDeploy = (contractName: string, contractAddress: string) => {
   console.log(
